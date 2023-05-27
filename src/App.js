@@ -8,7 +8,7 @@ import { Route, Routes } from 'react-router-dom';
 import QuizList from './components/QuizList';
 import Moderator from './components/Moderator';
 // import QuizList from './components/QuizList';
-
+ 
 
 function App() {
   const handleAddQuiz = (newQuiz) => {
@@ -26,15 +26,15 @@ function App() {
       <Navbar/>
       <br></br><br></br><br></br>
       
-      {/* <Routes>
+      <Routes>
       <Route path='/' element={<CreateTag/>}/>
       <Route path='/quiz' element={<QuizList/>}/>
     
       <Route path='/mod' element={<Moderator/>}/> onAddQuiz={handleAddQuiz} onDeleteQuiz={handleDeleteQuiz}
       
      
-     </Routes> */}
-     <LoginPage/>
+     </Routes>
+     {/* <LoginPage/> */}
      {/* <LeftSideNavbar/>       */}
      {/* <QuizList/> */}
 

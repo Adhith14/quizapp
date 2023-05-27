@@ -15,7 +15,7 @@ function Moderator({ onAddQuiz, onDeleteQuiz }) {
         ...prevQuiz,
         options: [...prevQuiz.options, ""],
       }));
-    }
+    } 
   };
 
   const handleDeleteOption = (index) => {
