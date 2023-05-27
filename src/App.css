@@ -1,0 +1,429 @@
+.App {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: #b2daf7;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.navbar{
+  background: rgb(196, 23, 23);
+}
+
+.tags-types-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  }
+  
+  .tags-types-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  min-width: 20rem;
+  }
+  
+  .tags-types-form h6 {
+  margin-top: 0;
+  }
+  
+  .tags-types-form label {
+  font-weight: bold;
+  }
+  
+  .tags-types-form input,
+  .tags-types-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  resize: none;
+  }
+  
+  .tags-types-form button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  }
+  
+  .tags-types-form button.edit {
+  background-color: #2196f3;
+  }
+  
+  .tags-types-form button.delete {
+  background-color: #f44336;
+  margin-top: 0.5rem;
+  }
+  
+  .tags-types-form button.cancel {
+  background-color: #9e9e9e;
+  margin-top: 0.5rem;
+  }
+
+
+  .tags-types-select {
+    width: 100%;
+    max-width: 20rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #444;
+    background-color: #fff;
+  }
+  
+  .tags-types-select:focus {
+    outline: none;
+    border: 1px solid #aaa;
+    box-shadow: 0 0 3px #aaa;
+  }
+  
+  .tags-types-select option {
+    font-size: 1rem;
+    color: #444;
+    background-color: #fff;
+  }
+  
+  .tags-types-select option:hover {
+    background-color: #eee;
+  }
+  
+  .tags-types-select option:checked {
+    background-color: #ccc;
+  }
+
+  .delete-tag-container{
+    background: #d9eefa;
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+.delete-button{
+  background: red;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 5px;
+}
+  
+/* -------------------------------Login------------------------------------- */
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  width: 300px;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.user-type {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.checkbox-group label {
+  margin-left: 0.5rem;
+}
+
+.password-input {
+  display: flex;
+  align-items: center;
+}
+
+.password-input input {
+  flex-grow: 1;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.password-toggle {
+  padding: 0.25rem;
+  background-color: #f5f5f5;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.password-toggle.show {
+  background-color: #e0e0e0;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1c7dd2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background-color: #166dbd;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.signup-link a {
+  color: #1c7dd2;
+  transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+  color: #166dbd;
+}
+
+/* -------------------------------------left navbar---------------------------------------------- */
+.left-side-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  width: 100px;
+  margin-top: 100px;
+  margin-left: 20px;
+  border-radius: 8px;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.nav-icon {
+  font-size: 1.2rem;
+}
+
+.nav-button:hover {
+  background-color: #e0e0e0;
+}
+
+.nav-button:focus {
+  background-color: #c7c7c7;
+}
+
+/* --------------------------------------------------------quizlist------------------------------------------------- */
+.quiz-list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.quiz-list th,
+.quiz-list td {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+.quiz-list th {
+  background-color: #f2f2f2;
+}
+
+.quiz-list tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.status-indicator {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.status-indicator.approved {
+  background-color: #b4e6b4;
+  color: #227c22;
+}
+
+.status-indicator.disapproved {
+  background-color: #ffbcbc;
+  color: #ff3b3b;
+}
+
+.action-button {
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.approve-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.disapprove-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.action-button:hover {
+  opacity: 0.8;
+}
+
+/* ---------------------------------moderator------------------------------------- */
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.quiz-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.quiz-question {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.quiz-options {
+  margin-bottom: 5px;
+}
+
+.quiz-correct-answer {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.quiz-delete-button {
+  background-color: #ff5252;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.quiz-delete-button:hover {
+  background-color: #e04848;
+}
+
+.quizzes-container{
+  background: #70c8fb;
+  border-radius: 8px;
+}
